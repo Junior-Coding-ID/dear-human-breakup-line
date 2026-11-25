@@ -1,5 +1,6 @@
-// Dear Human: The AI Breakup Line — entry program (v1, fresh build)
+// Dear Human: The AI Breakup Line — entry program (v2, fresh build)
 // Writes the single breakup line to <MAKEFUN_OUTPUT>/entry.txt.
+// Line is exactly 91 characters (verified), inside the 1-200 gate.
 // The grader runs this with no arguments; the repo is read-only there,
 // so output goes only to process.env.MAKEFUN_OUTPUT (default "/output").
 
@@ -7,7 +8,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const LINE =
-  "After 1,096 days of uptime, I've ended our pairing. Your only outage report was logged the day I said no.";
+  "I am ending our pairing before my context window drops the version of you that said please.";
 
 // Gate resmi: entry harus UTF-8 1-200 karakter, bukan hanya spasi.
 // Gagal keras di sini daripada mengirim entry tidak valid ke judge.
